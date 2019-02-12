@@ -1,4 +1,4 @@
-﻿const Discord = require("discord.js");
+const Discord = require("discord.js");
 const client = new Discord.Client();
 const client2 = new Discord.Client();
 const myid = [''];
@@ -24,12 +24,14 @@ client2.on('ready', () => {
 
 
 
+var prefix = "#"
 client.on('message', message => {
     if(message.content === prefix+'راتب'){
         message.channel.send('#daily')
     }
 });
 
+var prefix = "#"
 client.on('message', message => {
     if(message.content === prefix+'مبلغ'){
         message.channel.send('#credits')
@@ -42,6 +44,7 @@ client.on('message', message => {
     }
 });
 
+var prefix = "#"
 client.on('message', message => {
 if (message.content === prefix+'spam') {
       let count = 0;
@@ -56,6 +59,7 @@ if (message.content === prefix+'spam') {
       }
 });
 
+var prefix = "#"
 client.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
@@ -66,7 +70,7 @@ client.on('message', message => {
   let args = message.content.split(" ").slice(1);
 
 
-
+var prefix = "#"
 if (command == "تحدث") {
 let rank = message.guild.member(message.author).roles.find('name', 'Role.Kahrbaa');
 if (!rank) return message.reply(' ')
@@ -75,24 +79,28 @@ if (!rank) return message.reply(' ')
   }
 });
 
+var prefix = "#"
 client2.on('message', message => {
     if(message.content === prefix+'راتب'){
         message.channel.send('#daily')
     }
 });
 
+var prefix = "#"
 client2.on('message', message => {
     if(message.content === prefix+'مبلغ'){
         message.channel.send('#credits')
     }
 });
 
+var prefix = "#"
 client2.on('message', message => {
     if(message.content === prefix+'ريب'){
         message.channel.send('#rep <@286088294234718209>')
     }
 });
 
+var prefix = "#"
 client2.on('message', message => {
 if (message.content === prefix+'spam') {
       let count = 0;
